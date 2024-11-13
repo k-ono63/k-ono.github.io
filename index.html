@@ -1,90 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="地域に愛される歯科医院へ。健康な歯で笑顔の毎日を。">
+    <title>五反田歯科医院</title>
+    <!-- RESS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+    <header>
+        <div class="wrapper">
+            <div class="header wide">
+                <h1 class="logo">
+                    <a href="index.html"><img src="img/LOGO.svg" alt="五反田歯科医院"></a>
+                </h1>
+                <nav class="nav-container">
+                    <div class="sp logo">
+                        <a href="index.html"><img src="img/LOGO_white.svg" alt="五反田歯科医院"></a>
+                    </div>
+                    <ul class="main-nav">
+                        <li class="sp"><a href="#">トップページ</a></li>
+                        <li><a href="medical-information.html">診療案内</a></li>
+                        
+                        <li><a href="#">アクセス・診療時間</a></li>
+                        <li><button class="reservation btn"><a href="#">Web予約はこちら</a></button></li>
+                    </ul>
+                </nav>
+                <button type="button" class="sp menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+    </header>
+    <main class="wrapper">
+        <section class="full main-bg">
+            <img src="img/mainvisual.jpg" alt="">
+            <div class="main-bg-text">
+                <div class="overlay-text">
+                    <h2>
+                        <span class="overlay-text-h2"><span class="blue">地域に愛される</span>歯科医院へ</span><br>
+                        <span class="overlay-text-h2"><span class="pink">健康な歯</span>で笑顔の毎日を</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="contents">
+            <h3>当院の特徴</h3>
+            <div class="features">
+                <div class="feature">
+                    <img src="img/Thumbnail1.jpg" alt="">
+                    <p>清潔な院内空間</p>
+                </div>
+                <div class="feature">
+                    <img src="img/Thumbnail2.jpg" alt="">
+                    <p>経験豊富な歯科医師</p>
+                </div>
+                <div class="feature">
+                    <img src="img/Thumbnail3.jpg" alt="">
+                    <p>駅チカで通いやすい</p>
+                </div>
+            </div>
+        </section>
+        <section class="contents policy-sec">
+            <h3>治療のポリシー</h3>
+            <div class="policy">
+                <div class="policy-img">
+                    <img src="img/policy.jpg" alt="">
+                </div>
+                <div class="policy-text">
+                    <h4>
+                        ひとりひとりに寄り添った<br>
+                        最善の治療を目指しています
+                    </h4>
+                    <p>治療や費用について、不安を抱える患者様も多いことと思います。日々、患者様から信頼を得られるよう努めております。<br>
+                    ご心配なことがございましたら、お気軽にご相談ください。<br>
+                    患者様ひとりひとりに寄り添った、誠実な治療をめざしております。</p>
+                </div>
+            </div>
+        </section>
+        <section class="contents">
+            <h3>お知らせ</h3>
+            <article class="information">
+                <div class="info-day">
+                    <p>2025/04/18</p>
+                </div>
+                <div class="info">
+                    <h4>5月の休診日</h4>
+                    <p>5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋</p>
+                </div>
+            </article>
+            <article class="information">
+                <div class="info-day">
+                    <p>2025/03/17</p>
+                </div>
+                <div class="info">
+                    <h4>4月の休診日</h4>
+                    <p>4月の休診日のお知らせ抜粋4月の休診日のお知らせ抜粋4月の休診日のお知らせ抜粋4月の休診日のお知らせ抜粋4月の休診日のお知らせ抜粋4月の休診日のお知らせ抜粋</p>
+                </div>
+            </article>
+            <article class="information">
+                <div class="info-day">
+                    <p>2025/02/16</p>
+                </div>
+                <div class="info">
+                    <h4>3月の休診日</h4>
+                    <p>3月の休診日のお知らせ抜粋3月の休診日のお知らせ抜粋3月の休診日のお知らせ抜粋3月の休診日のお知らせ抜粋3月の休診日のお知らせ抜粋3月の休診日のお知らせ抜粋</p>
+                </div>
+            </article>
+            <div class="info-nav">＞<span>お知らせ一覧へ</span></div>
+        </section>
+    </main>
+    <footer class="wrapper">
+        <div class="footer">
+            <div class="logo">
+                <a href="index.html"><img src="img/LOGO.svg" alt="五反田歯科医院"></a>
+            </div>
+            <div class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html">トップページ</a></li>
+                    <li><a href="medical-information.html">診療案内</a></li>
+                    <li><a href="#">スタッフ紹介</a></li>
+                    <li><a href="#">アクセス・診療時間</a></li>
+                    <li><a href="#">WEB予約</a></li>
+                </ul>
+            </div>
+            <div class="sns-share">
+                <ul class="sns-share-icon">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-x-twitter"></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                </ul>
+            </div>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+        <div class="copyright full">
+            <p>Copyright © 2024 gotanda dental clinic. All Rights Reserved.</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
+    </footer>
+
+<!-- jQuery -->
+<script src="js/script.js"></script>
 </body>
 </html>
